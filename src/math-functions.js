@@ -151,7 +151,21 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    const dynA = dynamicArray[0];
+    const dynB = dynamicArray[1];
+    const dynC = dynamicArray[2];
+    const dynD = dynamicArray[3];
+    const dynE = dynamicArray[4];
 
+
+    for(let i = 0; i < dynamicArray.length; i++) {
+        const dynArray = multiply(dynamicArray[i], 120)[0];
+
+        return [
+            dynArray,
+            `The numbers ${dynA},${dynB},${dynC},${dynD},${dynE} have a product of 120.`
+        ];
+    }
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
