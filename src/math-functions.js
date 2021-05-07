@@ -157,20 +157,9 @@ export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     const dynD = dynamicArray[3];
     const dynE = dynamicArray[4];
 
-    // for (let dynArray of dynamicArray) {
-    //     multiply(dynamicArray.length)[0];
-
-    //     if(dynArray === 120)
-
-    //     return [
-                
-    //         `The numbers ${dynamicA},${dynamicB},${dynamicC},${dynamicD},${dynamicE} have a product of 120.`
-    //     ];
-    // };
-
 
     for(let i = 0; i < dynamicArray.length; i++) {
-        const dynArray = dynamicArray[i] = dynamicArray[i] * 1;
+        const dynArray = multiply(dynamicArray[i], 120)[0];
 
         return [
             dynArray,
